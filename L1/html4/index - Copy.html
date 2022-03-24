@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<title>Formular C801</title>
+	</head>
+	
+	<body bgcolor="lightblue">
+		<table bgcolor="white">
+			<tr>
+				<th><h1><b><strong>C801</strong></b></h1></th>
+				<th><h2>
+					CERERE
+					de atribuire a num&#259;rului de ordine din Registrul de eviden&#355;&#259; a aparatelor de marcat electronice fiscale instalate &#238;n jude&#355;/municipiul Bucure&#351;ti
+					sau a num&#259;rului unic de identificare din aplica&#355;ia informatic&#259; a Agen&#355;iei Na&#355;ionale de Administrare Fiscal&#259;
+				</h2></th>
+			</tr>
+			<tr>
+				<td align="center"><a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/801.html" target="_blank">Versiuni</a></td>
+				<td align="justify">
+					<p>(Anexa 6 la din H.G. nr. 479/2003, republicat&#259;, privind aprobarea Normelor metodologice pentru aplicarea
+					O.U.G nr. 28/1999 privind obliga&#238;ia agen&#355;ilor economici de a utiliza aparate de marcat electronice fiscale, cu modific&#259;rile &#351;i complet&#259;rile ulterioare)</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span>
+						<input type="text" value="C801_A1.0.0" readonly>
+						/ 11.02.2021
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Suma de control: <input type="text" value="1"></td>
+				<td>
+					<span>
+						<input type="button" value="Instructiuni">
+						<input type="button" value="DEBLOCARE">
+						<input type="button" value="LISTARE">
+						<input type="button" value="VALIDARE">
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Luna <input type="text" value="1"><!-- <type="number" value="1" min="1" max="12" step="1" width="4" --> Anul <input value="2020" type="text" disabled>
+				</td>
+			</tr>
+		</table>
+
+		<form action="#" name="formular">
+			<ol type="I">
+				<li><fieldset>
+					<legend>Date de identificare a societ&#259;&#355;ii solicitante</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="cif">1. Cod de identificare fiscal&#259;</label>
+							</td>
+							<td>
+								<label for="denumire1">2. Denumire</label>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="cif"></td>
+							<td><input type="text" id="denumire1"></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label for="adresa1">3. Adres&#259;</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" id="adresa1">
+							</td>
+						</tr>
+					</table>
+				</fieldset></li>
+				<li><fieldset>
+					<legend>Date de identificare a reprezentantului legal</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="cnpnif">1. CNP/ NIF</label>
+								<br>
+								<input type="text" id="cnpnif">
+							</td>
+							<td>
+								<label for="nume">2. Nume &#351;i prenume</label>
+								<br>
+								<input type="text" id="nume">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label for="adresa2">3. Adres&#259;</label>
+								<br>
+								<input type="text" id="adresa2">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ol start="4">
+								<li><div>
+									Tip act
+									<label for="bici">BI/CI</label><input type="checkbox" id="bici" value="BI/CI" checked>
+									<label for="pasaport">Pa&#351;aport</label><input type="checkbox" id="pasaport" value="Pasaport">
+									serie
+									<input type="text">
+									nr
+									<input type="text">
+									<br>
+									eliberat de
+									<input type="text">
+									la data de
+									<input type="text">
+									<br>
+									calitate
+									<input type="text">
+								</div></li>
+								<li><div>
+									Observa&#355;ii
+									<br>
+									<textarea cols="80" rows="10"></textarea>
+								</div></li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+				</fieldset></li>
+				<li><fieldset>
+					<legend>Date referitoare la AMEF achizi&#355;ionate</legend>
+					<table>
+						<tr><td colspan="3">
+							<b>AMEF</b> <input type="text">
+							1. Tip <input type="text">
+							2. Model <input type="text">
+						</td><td></td></tr>
+						<tr><td colspan="3">
+							3. Configura&#355;ie <input type="text">
+						</td><td></td></tr>
+						<tr><td colspan="3">
+							4. Seria de fabrica&#355;ie <input type="text">
+						</td><td></td></tr>
+						<tr><td colspan="3">
+							5. Autoriza&#355;ia de distribu&#355;ie
+							<label for="nrautorizatie">Nr.</label> <input type="text" id="nrautorizatie">
+							<label for="dataautorizatie">Data</label> <input type="text" id="dataautorizatie">
+						</td><td></td></tr>
+						<tr><td colspan="3">
+							6. Tipul activității în care este utilizat AMEF-ul
+							<select>
+								<option selected>
+								<option value="1">1-comert/servicii prestate in regim ambulant sau în mijloacele de transport</option>
+								<option value="2">2-transport in regim de taxi</option>
+								<option value="3">3-altele</option>
+								<option value="4">4-activit.de transport alternativ cu autoturism și conducător auto intermediate prin platforme digitale</option>
+							</select>
+						</td><td></td></tr>
+						<tr>
+							<td rowspan="2" valign="top">
+								7. Numărul de înmatriculare al taximetrului
+							</td>
+							<td colspan="2" valign="top">
+								<input type="text">
+							</td>
+							<td rowspan="2">
+								pentru 6.Tip activitate=2,4; format
+								<ul><li>JJNCCC,</li>
+									<li>JJNNCCC,</li>
+									<li>JJNNNCCC</li></ul>
+								sau
+								<ul><li>BNCCC,</li>
+									<li>BNNNCCC,</li>
+									<li>BNNNNCCC, </li></ul>
+								unde JJ=judet,N=nr,C=cifra)
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" valign="bottom">
+								<span>Locație instalare AMEF</span> <span><i><em>(pentru 6. Tip activitate=3)</em></i></span>
+							</td><td colspan="2"></td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<table border="1">
+									<tr>
+										<td>8. Județul</td>
+										<td><select>
+											<option selected>
+											</option><option value="01">Alba</option><option value="02">Arad</option><option value="03">Arges</option><option value="04">Bacau</option><option value="05">Bihor</option><option value="06">Bistrita-Nasaud</option><option value="07">Botosani</option><option value="09">Braila</option><option value="08">Brasov</option><option value="10">Buzau</option><option value="51">Calarasi</option><option value="11">Caras-Severin</option><option value="12">Cluj</option><option value="13">Constanta</option><option value="14">Covasna</option><option value="15">Dambovita</option><option value="16">Dolj</option><option value="17">Galati</option><option value="52">Giurgiu</option><option value="18">Gorj</option><option value="19">Harghita</option><option value="20">Hunedoara</option><option value="21">Ialomita</option><option value="22">Iasi</option><option value="23">Ilfov</option><option value="24">Maramures</option><option value="25">Mehedinti</option><option value="40">Mun.Bucuresti</option><option value="26">Mures</option><option value="27">Neamt</option><option value="28">Olt</option><option value="29">Prahova</option><option value="31">Salaj</option><option value="30">Satu Mare</option><option value="32">Sibiu</option><option value="33">Suceava</option><option value="34">Teleorman</option><option value="35">Timis</option><option value="36">Tulcea</option><option value="38">Valcea</option><option value="37">Vaslui</option><option value="39">Vrancea</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td>9. Localitatea/Orașul</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>10. Strada</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>11. Adresa (nr. strada, bloc, ap.)</td>
+										<td><input type="text"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</fieldset></li>
+			</ol>
+			<input type="radio" id="sterge" value="sterge" name="actiune">
+			<label for="sterge">Șterge</label>
+			<input type="radio" id="adauga" value="adauga" name="actiune">
+			<label for="adauga">Adaugă</label>
+			<input type="submit" value="Trimite">
+			<input type="reset" value="Resetează">
+		</form>
+
+		<center>
+			<img src="https://validator.w3.org/images/valid_icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88">
+		</center>
+		
+	</body>
+
+</html>

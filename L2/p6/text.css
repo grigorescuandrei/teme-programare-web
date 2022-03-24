@@ -1,0 +1,19 @@
+input[type=text] {
+    font-family: monospace;
+    padding: 0;
+    padding-bottom: 1px;
+    margin: 0px;
+    border: none;
+    background-image: url("patrat.png");
+    background-repeat: repeat-x;
+    background-size: 16px;
+    letter-spacing: 8px;
+    image-rendering: crisp-edges;
+    text-indent: 4px;
+    overflow: hidden;
+    width: calc(20 * 16px + 4px);
+}
+
+#cnp {
+     width: calc(13 * 16px + 4px);
+ }

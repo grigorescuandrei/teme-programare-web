@@ -1,0 +1,30 @@
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+}
+
+header {
+    background-color: red;
+    vertical-align: middle;
+}
+
+nav {
+    background-color: yellow;
+}
+
+section {
+    background-color: green;
+}
+
+footer {
+    background-color: grey;
+}
+
+header, footer, nav ul li {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}

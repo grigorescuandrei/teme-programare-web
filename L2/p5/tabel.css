@@ -1,0 +1,19 @@
+@import "gallery.css";
+
+ul {
+    width: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+}
+
+figcaption {
+    margin: auto;
+}

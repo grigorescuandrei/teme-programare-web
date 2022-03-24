@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(87, 171, 203);
+}
+
+.dialog li {
+    margin: 10px;
+    margin-left: 25px;
+    border: 50px solid transparent;
+    border-bottom-width: 10px;
+    border-image: url("bubble.png") 62 67 24 67 fill stretch;
+    background-color: transparent;
+    text-align: center;
+    list-style-position: outside;
+    width: fit-content;
+    list-style-type: none
+}
+
+.alice::before, .bob::before {
+    position: absolute;
+    left: 10px;
+    transform: translate(0px, -40px);
+    background-image: url("avatars.jpg");
+    width: 53px;
+    height: 54px;
+    content: "";
+    background-size: 209px 206px;
+}
+
+.alice::before {
+    background-position-x: -9px;
+    background-position-y: -10px;
+}
+
+.bob::before {
+    background-position-x: -77px;
+    background-position-y: -144px;
+}

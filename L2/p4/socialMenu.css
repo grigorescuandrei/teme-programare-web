@@ -1,0 +1,59 @@
+.social-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    width: 83px;
+    height: 83px;
+    background-position-y: 84px;
+    background-image: url("css-pr4.png");
+}
+
+.social-icon:hover {
+    background-position-y: 0;
+}
+
+.facebook {
+    background-position-x: 0;
+}
+
+.flickr {
+    background-position-x: -84px;
+}
+
+.dribbble {
+    background-position-x: -168px;
+}
+
+.google-plus {
+    background-position-x: -252px;
+}
+
+.linkedin {
+    background-position-x: -336px;
+}
+
+.pinterest {
+    background-position-x: -420px;
+}
+
+.rss-feeds {
+    background-position-x: -504px;
+}
+
+.skype {
+    background-position-x: -588px;
+}
+
+.twitter {
+    background-position-x: -672px;
+}
+
+.vimeo {
+    background-position-x: -756px;
+}
+
+.youtube {
+    background-position-x: -840px;
+}
