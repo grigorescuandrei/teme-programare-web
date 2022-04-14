@@ -17,7 +17,7 @@ body {
     list-style-type: none
 }
 
-.alice::before, .bob::before {
+.alice::before, .bob::before, .john::before {
     position: absolute;
     left: 10px;
     transform: translate(0px, -40px);
@@ -31,6 +31,11 @@ body {
 .alice::before {
     background-position-x: -9px;
     background-position-y: -10px;
+}
+
+.john::before {
+    background-position-x: -145px;
+    background-position-y: -76px;
 }
 
 .bob::before {
