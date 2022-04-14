@@ -1,0 +1,35 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 10px;
+}
+
+th {
+    text-effect: emboss;
+}
+
+th:hover {
+    background-color: #EEE;
+}
+
+th:active {
+    background-color: #AAA;
+}
+
+.h-asc-sorted::after {
+    content: " ►"
+}
+
+.h-desc-sorted::after {
+    content: " ◄"
+}
+
+.v-asc-sorted::after {
+    content: " ▲"
+}
+
+.v-desc-sorted::after {
+    content: " ▼"
+}

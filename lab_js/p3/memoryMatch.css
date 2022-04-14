@@ -1,0 +1,41 @@
+* {
+    user-select: none;
+}
+
+#gameTable {
+    border: 1px solid black;
+}
+
+#gameTable td {
+    border: 1px solid black;
+    position: relative;
+    width: 10vh;
+    height: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+    background-size: 100px 135px;
+}
+
+#gameTable {
+    margin: auto;
+}
+
+h1, a {
+    display: block;
+    text-align: center;
+}
+
+.cover {
+    width: 10vh;
+    height: 10vh;
+    z-index: 1;
+    background-color: black;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cover:hover {
+    background-color: #222;
+}
