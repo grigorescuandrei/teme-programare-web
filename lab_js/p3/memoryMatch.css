@@ -13,7 +13,10 @@
     height: 10vh;
     box-sizing: border-box;
     text-align: center;
-    background-size: 100px 135px;
+    font-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 #gameTable {

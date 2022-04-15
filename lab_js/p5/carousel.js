@@ -65,11 +65,25 @@ for (let i = 0; i < carousels.length; i++) {
         }, 16)
     }
 
-    nextButton.onclick = function() {
+    let next = function() {
         if (debounce)
             return;
         incrementK()
         transition()
+    }
+
+    let delay = 5000
+    let autoIncrementID
+    let autoIncrement = function() {
+        next()
+        autoIncrementID = setTimeout(autoIncrement, delay + 1000)
+    }
+    autoIncrementID = setTimeout(autoIncrement, delay)
+
+    nextButton.onclick = function() {
+        next()
+        clearTimeout(autoIncrementID)
+        autoIncrementID = setTimeout(autoIncrement, delay + 1000)
     }
 
     prevButton.onclick = function() {
@@ -77,5 +91,38 @@ for (let i = 0; i < carousels.length; i++) {
             return;
         decrementK()
         transition()
+        clearTimeout(autoIncrementID)
+        autoIncrementID = setTimeout(autoIncrement, delay + 1000)
+    }
+
+    let cards = getDescendantsOfType(carousel, "li")
+    for (let i = 0; i < cards.length; i++) {
+        let card = cards[i]
+        let cardImage = getDescendantsOfType(card, "img")[0]
+        let link = getDescendantsOfType(card, "a")[0]
+        cardImage.onclick = function() {
+            let modal = document.createElement("div")
+            modal.className = "modal"
+            document.body.appendChild(modal)
+            let modalBackground = document.createElement("div")
+            modalBackground.className = "modal-background"
+            modal.appendChild(modalBackground)
+            let img = document.createElement("img")
+            img.width = 320
+            img.height = 320
+            img.src = cardImage.src
+            img.style.zIndex = 4;
+            modal.appendChild(img)
+            let a = document.createElement("a")
+            a.href = link.href
+            a.innerHTML = link.innerHTML
+            modal.appendChild(a)
+            modal.onclick = function() {
+                document.body.removeChild(modal)
+            }
+            img.onclick = function() {
+                document.location = link.href
+            }
+        }
     }
 }
